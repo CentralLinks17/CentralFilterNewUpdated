@@ -700,7 +700,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                 for file in files:
                     cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('$') and not x.startswith('^') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
     else:
-        cap = f"<b>The Results For ☞ {search}\n\nRequested By ☞ {query.from_user.mention}\n\nResults shown in ☞ {remaining_seconds} seconds\n\nPowered By ☞ : {query.message.chat.title}\n@Central_Links\n\n⚠️ After 5 minutes this message will be automatically deleted ️\n\n</b>"
+        cap = f"<b>The Results For ☞ {search}\n\nRequested By ☞ {query.from_user.mention}\n\nResults shown in ☞ {remaining_seconds} seconds\n\nPowered By ☞ : {query.message.chat.title}\n@Central_Links\n\n⚠️ After 5 minutes this message will be automatically deleted.🗑️\n\n</b>"
         cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
         for file in files:
             cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('$') and not x.startswith('^') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
