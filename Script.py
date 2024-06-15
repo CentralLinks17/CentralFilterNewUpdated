@@ -209,11 +209,8 @@ Name <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-    CAPTION = """<b>📂Filename: {file_caption}</b>
-<b> Size ⚙️: {file_size}
-╔════ Join with us ════╗
-@Central_Links X @CentralRequest
-╚════ Join with us ════╝</b>"""
+    CAPTION = """<b>📂Filename: {file_caption}</b>\n\n
+<b>@Central_Links X @CentralRequest</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
