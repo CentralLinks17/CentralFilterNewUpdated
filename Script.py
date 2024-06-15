@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """<b><blockquote>Hello {}, My name is <a href=https://t.me/{}>{}</a></blockquote>
+    START_TXT = """<b>Hello {}, My name is <a href=https://t.me/{}>{}</a>
     
 ✯ I am the latest advanced and powerful auto filter bot with awesome filter, file store bot, manual filter, customized shortener support and best UI performance
 ✯ Don't waste your time looking to add me to your group; I'm only for @CentralRequest.
@@ -206,9 +206,9 @@ Message <b>: {}</b>"""
 
     CAPTION = """<b>📂Filename: {file_caption}</b>
 <b> Size ⚙️: {file_size}
-╔════════ Join with us ════════╗
+╔════ Join with us ════╗
 @Central_Links X @CentralRequest
-╚════════ Join with us ════════╝</b>"""
+╚════ Join with us ════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
