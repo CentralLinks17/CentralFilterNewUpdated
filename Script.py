@@ -209,7 +209,7 @@ Name <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-    CAPTION = """<b>📂Filename: {file_caption}</b>\n\n
+    CAPTION = """<b>📂Filename: {file_caption}</b>\n
 <b>@Central_Links X @CentralRequest</b>"""
 
     IMDB_TEMPLATE_TXT = """
