@@ -1,3 +1,8 @@
+# Don't Remove Credit @VJ_Botz
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
+
+
 import re
 from os import environ
 from Script import script 
@@ -12,16 +17,16 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1305232'))
-API_HASH = environ.get('API_HASH', '71b917e302a36826c54988990dc7a789')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5889574686:AAF6jEFEijN_UWvPBp5YNWC-jztmWbna4jc")
+SESSION = environ.get('SESSION', 'TechVJBot')
+API_ID = int(environ.get('API_ID', '25754796'))
+API_HASH = environ.get('API_HASH', '8919c4b0fcfd3fa4e8929a64dab80265')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6847231563:AAHOvRyF9nsigCfq-ke8uy4WkCoQh9zc93Q")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-PICS = (environ.get('PICS', 'https://graph.org/file/280c5e83f4ec2cf83a920.png')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://i.ibb.co/ZS9hpQc/20220731-134839.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "")
+MELCOW_VID = environ.get("MELCOW_VID", "https://i.ibb.co/ZS9hpQc/20220731-134839.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 # Admins, Channels & Users
@@ -39,32 +44,32 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1002160418057') # give your force s
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', 'CentralLinks_Contactbot')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cluster0:password17@cluster0.pvxupo5.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cluster0:Password17@cluster0.xfhz1ov.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "CentralLinks")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'centrallinkscollection')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
-REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '7days')
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/470ec1cda7484d003ad70.jpg')
+REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>-Avaiable Plans-\n\n• 30Rs - 1 Week\n• 60Rs - 1 Month\n• 150Rs - 3 Months\n• 250Rs - 6 Months\n• 500Rs - 1 Year\n\n🎁 Premium Features 🎁\n\n• No need to verify. \n• No need to open link. \n• Direct files.\n• Ad-Free Experience. \n• High Speed Download link.\n• Multi-Player Streaming Link. \n• Unlimited Movies/Series. \n• Full Admin Support. \n• Request will be completed in 1 hour if available on OTT or any network source. \n\n✨ UPI ID: <code>thiyaku1703-1@okhdfcbank</code> \n\nClick here to check your active plan /myplan. \nMust send screenshot after payment to our chat bot, @CentralLinks_Contactbot\n\n‼️ After sending the screenshot, kindly wait until the admin verifies and adds you to the premium plan.</b>')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Thiyaku_Suriya') # owner username without @
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', '') #group link
+GRP_LNK = environ.get('GRP_LNK', '')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/central_links')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/central_tutorial/21')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CentralLinks_Contactbot') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CentralLinksSupport') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -93,7 +98,7 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '14de6aaacf1601fe7b7c
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Central_Tutorial/21')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/central_tutorial/21')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
@@ -103,7 +108,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '14de6aaacf1601fe7b7c1de78d154dacb9
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 PORT = environ.get("PORT", "8080")
-MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
+MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends❤️')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
@@ -117,6 +122,10 @@ QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 
+                           # Don't Remove Credit @VJ_Botz
+                           # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+                           # Ask Doubt on telegram @KingVJ01
+
 
 # Online Stream and Download
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
@@ -129,7 +138,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://wilful-gertie-kristybza-c2d2d09a.koyeb.app/")
+URL = environ.get("URL", "https://centralfilternew-41713572aac0.herokuapp.com/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
@@ -154,3 +163,8 @@ LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_I
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+
+
+# Don't Remove Credit @VJ_Botz
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
