@@ -1,13 +1,14 @@
 class script(object):
-    START_TXT = """<b><blockquote>Hello {}, My name is <a href=https://t.me/{}>{}</a></blockquote>
-✯ Powerful Auto Filtering: Save time with automated filtering based on your specific needs.
-✯ Awesome Filter Options: Enjoy a wide range of filters to customize your experience.
-✯ File Storage Integration: Easily store and access filtered files within the bot.
-✯ Manual Filtering Flexibility: Maintain control with the option for manual filtering.
-✯ Intuitive UI for Quick Results: Experience a user-friendly interface for effortless navigation.
+    START_TXT = """<b>Hello {}, My name is <a href=https://t.me/{}>{}</a>
+✯ Powerful Auto Filtering based on your specific needs.
+✯ File store and access filtered files within the bot.
+✯ Manual Filtering Flexibility.
+✯ Experience an intuitive UI for Quick Results for effortless navigation.
+
 Please Note 🪄:
-✯ This bot is currently exclusive to the @CentralRequest group.
+✯ This bot is currently exclusive to the @CentralRequest group, get invite link from that group.
 For inquiries about paid access and setup, contact @CentralLinks_ContactBot.
+
 Team: @Central_Links</b>"""
 
     HELP_TXT = """<b>Hey {}
